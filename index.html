@@ -208,8 +208,8 @@ h1 em{color:#b93e19}
       <button type="button" class="btn contact-secondary" data-compose="gmail">Gmail ↗</button>
       <button type="button" class="btn contact-secondary" data-compose="outlook">Outlook ↗</button>
     </div>
-<p class="form-privacy-note">Les informations saisies servent à préparer votre e-mail. Elles ne sont ni envoyées ni conservées par ce formulaire avant l’envoi de votre message. Consultez notre <a href="/politique-confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a>.</p>
-    <p class="contact-feedback" id="contact-feedback" role="status" aria-live="polite">Le message sera préparé pour <strong>candy.jones@effigestions.fr</strong>. Aucun e-mail n'est envoyé automatiquement et aucune donnée n'est enregistrée par ce site.</p>
+<p class="form-privacy-note">Les informations saisies ne sont pas conservées par le site. Si vous choisissez Gmail ou Outlook, elles sont transmises à ce service pour préparer votre message. EffiGestions ne les reçoit qu’après votre envoi. Consultez notre <a href="/politique-confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a>.</p>
+    <p class="contact-feedback" id="contact-feedback" role="status" aria-live="polite">Le message sera préparé pour <strong>candy.jones@effigestions.fr</strong>. Aucun e-mail n'est envoyé automatiquement et aucune réponse au formulaire n'est enregistrée dans une base de données par ce site.</p>
   </form>
   <div class="contact-backup">Vous préférez écrire directement ? <a href="mailto:candy.jones@effigestions.fr">candy.jones@effigestions.fr</a> <button id="copy-email" class="copy-link" type="button">Copier l'adresse</button></div>
 </div>
@@ -245,7 +245,7 @@ h1 em{color:#b93e19}
     const subject = subjects[topic.value] || subjects.partenariat;
     const selected = topic.options[topic.selectedIndex].text;
     const body = ['Bonjour,', '', 'Je souhaite vous contacter au sujet de : ' + selected + '.', '', 'Nom : ' + name, 'E-mail : ' + sender, 'Cabinet / entreprise : ' + company, 'Disponibilités : ' + (availability || 'À convenir'), '', 'Précisions :', message || 'À préciser lors de notre échange.', '', 'Bien cordialement,', name].join('\n');
-    notice.textContent = 'Votre e-mail est préparé. Vérifiez-le puis cliquez sur Envoyer dans votre messagerie. Le site ne transmet ni ne conserve vos données.';
+    notice.textContent = 'Votre e-mail est préparé. Vérifiez-le puis cliquez sur Envoyer dans votre messagerie. Ce formulaire ne conserve pas les informations saisies.';
     if (service === 'gmail') {
       window.open('https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(destination) + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body), '_blank', 'noopener,noreferrer');
     } else if (service === 'outlook') {
