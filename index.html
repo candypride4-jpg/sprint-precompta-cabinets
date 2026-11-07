@@ -42,6 +42,96 @@
 .contact-backup a{color:#9d3e20;font-weight:750}.copy-link{border:none;background:none;color:#a1482b;font-weight:800;text-decoration:underline;cursor:pointer;font-size:12px;margin-left:9px;padding:5px}
 @media(max-width:750px){.contact-panel{padding:24px 18px}.form-grid{grid-template-columns:1fr;row-gap:0}.contact-actions .btn{flex:1 1 100%}}
 
+
+/* V3 — palette renforcée, marges mobiles et composants accessibles */
+:root{
+  --navy:#0a1c35;--navy2:#153553;--orange:#cc4317;--gold:#f2a561;
+  --paper:#f8fafc;--muted:#354a60;--line:#d4dee7;--mint:#e0f1eb;
+  --green:#14684c;--shadow:0 25px 64px rgba(10,28,53,.17)
+}
+html{scroll-padding-top:100px}
+body{overflow-x:clip}
+.topline{background:linear-gradient(90deg,#ca4017 0%,#f28c42 48%,#ca4017 100%)}
+.header{border-bottom-color:#dce4ec;box-shadow:0 7px 22px rgba(10,28,53,.08)}
+.nav-links>a{color:#223751}
+.nav-links>a:hover{color:#b63b16}
+.brand-sub{color:#445c73}
+.btn{box-shadow:0 8px 20px rgba(204,67,23,.18)}
+.btn:hover{background:#a93513;border-color:#a93513}
+.btn-outline{border-color:#a2b5c6;box-shadow:none}
+.btn-outline:hover{background:#fff0e7;border-color:#cc4317;color:#a93513}
+.btn-white{box-shadow:none}
+.hero{background:linear-gradient(120deg,#fff 0%,#fff8ef 57%,#eaf2f9 100%);border-bottom-color:#c8d6e1}
+.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+.hero-grid>div{min-width:0}
+.eyebrow,.section-kicker{color:#963b1b}
+h1 em{color:#b93e19}
+.lead{color:#2d4159}
+.hero-emphasis{background:#fff1e7;color:#1d3450;padding:15px 18px;border-radius:0 10px 10px 0}
+.hero-pills{color:#273e58}
+.illustration:before{background:linear-gradient(135deg,#f6d9c8 0%,#fff0db 56%,#d9e9f2 100%)}
+.flow-card{border-color:#cbd6df;box-shadow:0 25px 65px rgba(10,28,53,.16)}
+.flow-top strong,.paper-row b,.flow-bottom strong{color:#152b45}
+.step-label{color:#465d74}
+.paper-row{border-color:#dce5eb}
+.band{background:linear-gradient(105deg,#07172d 0%,#123859 100%)}
+.stat-num{color:#ffc18d}
+.stat-txt{color:#e2edf5}
+.card{border-color:#d7e1e9;box-shadow:0 10px 27px rgba(10,28,53,.06)}
+.card p,.package-text,.timeline-item p,.border-box p{color:#40566d}
+.card-icon{background:#ffeadb;color:#ab3819}
+.benefit{background:#e9f1f8}
+.benefit-panel{border-color:#d1dfe8}
+.benefit-panel.partner{background:linear-gradient(140deg,#102947,#153c60)}
+.benefit-panel li{color:#334b64}
+.benefit-panel.partner li{color:#eff4f8}
+.package{border-color:#d0dee9;box-shadow:0 12px 31px rgba(10,28,53,.07)}
+.package.feature{box-shadow:0 15px 40px rgba(204,67,23,.11)}
+.price small{color:#40556a}
+.timeline-item{background:#eef4f9;border-color:#d1dfe8}
+.perimeter{background:#edf2f7}
+.border-box{border-color:#d1dde8}
+.questions details{border-color:#d0dce6}
+.cta{background:radial-gradient(ellipse at right,#205376 0%,#07192e 65%)}
+.cta p{color:#e2ecf4}
+.cta .trust{color:#d6e5ef}
+.footer{background:#061426}
+.contact-panel{border:1px solid #d0dae5}
+.field input,.field select,.field textarea{border-color:#94a7b7}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#cc4317;outline:2px solid #fed4bd}
+.contact-primary{background:var(--orange);color:#fff}
+.contact-secondary{background:#fff;color:#112b45;border-color:#849cac}
+.contact-secondary:hover{background:#eaf3f9}
+@media(max-width:750px){
+  .wrap{padding-inline:20px}
+  .hero-grid{grid-template-columns:minmax(0,1fr);padding:48px 20px 33px;gap:0}
+  .hero-grid>div{min-width:0}
+  .hero h1{font-size:clamp(34px,8.15vw,48px);letter-spacing:-1.35px;line-height:1.16;overflow-wrap:break-word}
+  .hero .eyebrow{font-size:10px;line-height:1.5;letter-spacing:1.1px}
+  .hero .lead{font-size:16px}
+  .hero-pills{gap:10px 16px}
+  .illustration{padding:30px 0 7px;max-width:100%;min-width:0}
+  .illustration:before{right:-24px;top:10px;width:min(390px,100%);height:335px}
+  .flow-card{max-width:100%;padding:21px 17px;transform:none}
+  .flow-top{flex-wrap:wrap}
+  .stats{padding:24px 20px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 15px}
+  .stat{min-width:0}
+  .stat-num{white-space:nowrap}
+  .contact-panel{padding:24px 18px}
+  .field input,.field select,.field textarea{font-size:16px}
+}
+@media(max-width:440px){
+  .stats{grid-template-columns:minmax(0,1fr);gap:19px}
+  .stat-num{min-width:88px}
+  .hero .action-row .btn{width:100%;flex:1 1 100%}
+  .flow-bottom{flex-wrap:wrap}
+  .flow-top small{font-size:10px}
+  .paper-row{padding:9px 8px;gap:6px}
+  .paper-row b{font-size:11px}
+  .paper-icon{flex:0 0 26px}
+  .warning,.done{font-size:9px;padding:3px 6px}
+}
+
 </style>
 </head>
 <body>
