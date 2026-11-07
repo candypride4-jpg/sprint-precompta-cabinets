@@ -132,6 +132,14 @@ h1 em{color:#b93e19}
   .warning,.done{font-size:9px;padding:3px 6px}
 }
 
+
+/* Pages légales, liens du pied de page et information de contact */
+.legal-footer-links{display:flex;flex-wrap:wrap;gap:0 8px;align-items:center;margin-top:13px}
+.legal-footer-links a{color:#f2c9b4;text-decoration:underline;text-underline-offset:3px}
+.legal-footer-links a:hover{color:#fff}
+.cta .form-privacy-note{max-width:none;color:#354b60;font-size:12px;line-height:1.65;margin:8px 0 10px}
+.form-privacy-note a{color:#ab3717;font-weight:750;text-decoration:underline}
+
 </style>
 </head>
 <body>
@@ -173,14 +181,14 @@ h1 em{color:#b93e19}
 <details><summary>Qui contractualise avec le dirigeant ?</summary><p>Le client choisit directement le Sprint auprès d’EffiGestions. Le périmètre, le temps disponible et les livrables administratifs sont définis avec lui avant la prestation.</p></details>
 <details><summary>Dans quels outils travaillez-vous ?</summary><p>Principalement à distance, dans un espace documentaire Google Drive organisé avec le client. Les accès, les personnes destinataires et le canal de transmission au cabinet sont convenus avec le dirigeant ; il conserve le contrôle sur ses informations.</p></details>
 <details><summary>Peut-on vous adresser un seul dossier ponctuel ?</summary><p>Oui. Un premier dossier permet de vérifier si le dispositif convient, sans promettre de volume minimum ni abonnement.</p></details>
-<details><summary>Y a-t-il une commission de recommandation ?</summary><p>Une simple indication de coordonnées n’ouvre pas automatiquement droit à rémunération. Toute collaboration rémunérée éventuelle doit rémunérer une prestation effective et respecter les obligations professionnelles et déontologiques applicables. Le partenariat peut parfaitement être non rémunéré.</p></details>
+<details><summary>Y a-t-il une commission de recommandation ?</summary><p><strong>Non.</strong> Une simple indication de coordonnées n’ouvre pas droit à rémunération. <strong>La mise en relation n’est pas rémunérée.</strong></p></details>
 <details><summary>Comment protégez-vous la relation avec notre client ?</summary><p>Je suis l’interlocutrice de liaison administrative pendant la mission, sans me substituer à votre cabinet pour la comptabilité ou le conseil. Je partage et peux transmettre directement les documents au cabinet uniquement avec l’accord du dirigeant, aux destinataires autorisés et par le canal convenu.</p></details>
 </div></div></section>
 <section class="cta" id="contact"><div class="wrap cta-inner"><p class="section-kicker" style="color:#ffb38d">Premier échange · sans engagement</p><h2>Parlons des dossiers qui mobilisent inutilement votre équipe.</h2><p>Quinze minutes pour voir si Sprint Pré-comptabilité peut être une solution ponctuelle utile à vos clients.</p><a class="btn btn-white" href="#contact-form" data-topic="rendezvous">Proposer un échange de 15 minutes ↗</a>
-<div class="booking-panel" style="margin:16px auto 20px;text-align:center"><a class="btn btn-white" href="https://calendly.com/candy-jones-effigestions/echange-partenaire-sprint-pre-comptabilite?utm_source=site-effigestions&utm_medium=partenariat" target="_blank" rel="noopener noreferrer">📅 Réserver directement un créneau de 15 minutes ↗</a><p style="font-size:12px;margin:10px auto;color:#d6e5ef">Réservation en ligne · Calendly · Google Meet</p></div><div class="contact-panel" id="contact-form">
+<div class="booking-panel" style="margin:16px auto 20px;text-align:center"><a class="btn btn-white" href="https://calendly.com/candy-jones-effigestions/echange-partenaire-sprint-pre-comptabilite?utm_source=site-effigestions&utm_medium=partenariat" target="_blank" rel="noopener noreferrer">📅 Réserver directement un créneau de 15 minutes ↗</a><p style="font-size:12px;margin:10px auto;color:#d6e5ef">Réservation en ligne via Calendly</p></div><div class="contact-panel" id="contact-form">
   <span class="contact-pill">Contact direct</span>
   <h3>Préparez votre demande en 30 secondes.</h3>
-  <p>Vous pouvez réserver un échange de 15 minutes directement ci-dessus, ou préparer une demande par e-mail ci-dessous.</p>
+  <p>Vous pouvez réserver un échange de 15 minutes, sans engagement, directement ci-dessus, ou transmettre une demande par e-mail ci-dessous.</p>
   <form id="demande-form" autocomplete="on">
     <div class="form-grid">
       <div class="field"><label for="lead-name">Nom et prénom *</label><input id="lead-name" name="name" type="text" autocomplete="name" maxlength="120" required placeholder="Votre nom"></div>
@@ -200,13 +208,14 @@ h1 em{color:#b93e19}
       <button type="button" class="btn contact-secondary" data-compose="gmail">Gmail ↗</button>
       <button type="button" class="btn contact-secondary" data-compose="outlook">Outlook ↗</button>
     </div>
+<p class="form-privacy-note">Les informations saisies servent à préparer votre e-mail. Elles ne sont ni envoyées ni conservées par ce formulaire avant l’envoi de votre message. Consultez notre <a href="/politique-confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a>.</p>
     <p class="contact-feedback" id="contact-feedback" role="status" aria-live="polite">Le message sera préparé pour <strong>candy.jones@effigestions.fr</strong>. Aucun e-mail n'est envoyé automatiquement et aucune donnée n'est enregistrée par ce site.</p>
   </form>
   <div class="contact-backup">Vous préférez écrire directement ? <a href="mailto:candy.jones@effigestions.fr">candy.jones@effigestions.fr</a> <button id="copy-email" class="copy-link" type="button">Copier l'adresse</button></div>
 </div>
-<div class="trust">À distance partout en France · Offres ponctuelles · Relation comptable préservée</div></div></section>
+<div class="trust">À distance · Offres ponctuelles · Relation comptable préservée</div></div></section>
 </main>
-<footer class="footer"><div class="wrap footer-inner"><div><div class="brand-name" style="color:white">Effi<span>Gestions</span> <span style="font-size:13px;color:#9cafbe;font-weight:600">/ Sprint Pré-comptabilité</span></div><p class="footnote">Préparation administrative et documentaire des entreprises. Les travaux comptables réglementés sont exclus.</p><p class="footnote">Prototype de page partenaire · Informations légales et mentions de confidentialité à compléter avant publication.</p></div><a href="mailto:candy.jones@effigestions.fr">candy.jones@effigestions.fr ↗</a></div></footer>
+<footer class="footer"><div class="wrap footer-inner"><div><div class="brand-name" style="color:white">Effi<span>Gestions</span> <span style="font-size:13px;color:#9cafbe;font-weight:600">/ Sprint Pré-comptabilité</span></div><p class="footnote">Préparation administrative et documentaire des entreprises. Les travaux comptables réglementés sont exclus.</p><p class="footnote legal-footer-links"><a href="/mentions-legales.html">Informations légales</a><span aria-hidden="true"> · </span><a href="/politique-confidentialite.html">Politique de confidentialité</a></p></div><a href="mailto:candy.jones@effigestions.fr">candy.jones@effigestions.fr ↗</a></div></footer>
 
 <script>
 (() => {
